@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto com Hover </title>
+    <style>
+      body{
+          font-family: 'Courier New', Courier, monospace;
+      }
+        div > p {
+            display: none;
+        }
+        div :hover > p {
+            display:block;
+            color: grey;
+            background-color: khaki;
+            width: 25em;
+        }
+        div:hover{
+color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover no texto</h1>
+    <p>Passe o mouse e veja a magica</p>
+    <div>passe o mouse aqui
+        <p>Texto escondido......</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="idadeValidador.css">
+
+    <title>Verificador Idade</title>
+</head>
+<body >  <!--Se naõ colocar onload não vai chamar o JS-->
+    
+<header>
+    <h1>Verificar Idade </h1>
+</header>
+
+<section>
+    
+    <div>
+        <p>Ano de nascimento:
+            <input type="mumber" name="txtano" id="txtano" min="0">
+        </p>
+        <p>
+            Sexo:
+            <input type="radio" name="radsex" id="mas">  <!--Tem que ter o mesmo name os radios, pq se nao vai marcar os dois-->
+            <label for="mas">Masculino</label>
+
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+
+        <p>
+            <button type="button" value="ver" onclick="verify()">Enter</button>
+        </p>
+    </div>
+    <div id="res">
+        Preencha os dados e veja o resultado
+        <!--Poderia colocar imagem aqui como foi feito no Ex1 mas agr vamos fazer no JS-->
+    </div>
+
+</section>
+<br><br><br><br>
+
+<footer> &copy; JH productions</footer>
+
+<script src="modelo.js"></script>
+</body>
+</html>

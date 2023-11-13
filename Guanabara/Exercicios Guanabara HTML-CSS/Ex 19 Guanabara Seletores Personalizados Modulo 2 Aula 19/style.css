@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(0, 255, 255);
+}
+h1{
+    color: black;
+    text-align: justify;
+}
+h2{
+   color: rgba(80, 15, 231, 0.548);
+}
+h1#principal{
+    text-align: left;
+    background-color: azure;
+    color: black;
+}
+.basico{
+    color: blue;
+}
+.intermediario{
+    color: cornsilk;
+}
+.avancado{
+    color: darkred;
+}
+.destaque{
+    color: rgb(206, 241, 7);
+    font-family: fantasy;
+}

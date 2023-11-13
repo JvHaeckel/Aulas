@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+body{
+    font-family: fantasy;
+}
+a{
+    color: rgb(9, 186, 245);
+    text-decoration: none;   /* Tira o sublinhado */
+    font-weight: bold;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: slateblue;
+    text-decoration: whitesmoke;
+}
+a:active{    /* Quando clica muda de cor */
+    color: violet;
+}
+a::after{   /* Para elementos usamos ::  */
+    content:' ✪';
+    text-decoration: none;
+    font-weight: bolder;
+    color: blueviolet;
+
+}
+a::before{
+    content: '☞';
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Links abaixo: </h1>
+    <ul>
+
+        <li><a href="https://flowtrend.com.br/" target="_blank">Pagina de compras</a>
+        <li><a href="https://www.youtube.com/channel/UCgaVQOZSvhkFCZSmvzbu7PA" target="_blank">Youtube da loja</a>
+        <li><a href="https://flowtrend.com.br/collections/all" target="_blank">Produtos da loja</a>
+
+
+    </ul>
+</body>
+</html>

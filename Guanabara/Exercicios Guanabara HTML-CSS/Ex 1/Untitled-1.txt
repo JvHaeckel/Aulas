@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+  <head>
+  <meta charset =”UTF-8”>
+  <meta name=”viewport” content=”width=deice-width,
+  initial-scale=1.0”>        //configura o titulo da pagina 
+   <title> Document</title>
+</head>   fechou            
+<body>
+
+</body>   fechou 
+</html>    fechou 

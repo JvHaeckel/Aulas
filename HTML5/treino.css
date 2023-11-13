@@ -1,0 +1,221 @@
+ /* Sempre faça o alinhamento usando CSS, nunca HTML */
+ 
+.texto .p{
+    text-align: justify;
+}
+h2{
+    position: relative;
+    top: 5px;
+    width: auto;
+    padding: 2px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+h1, h2{  /* A vírgula serve para selecionar duas tags ao mesmo tempo */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ /*Formulário */
+header{
+    background-color: #958b8b;
+    padding: 20px 0;
+}
+ #imagem1{
+    position: relative;
+    width: 100px;
+    height: 90px;
+    top: -15px;
+    left: 60px;
+ }
+/*Navegação entre páginas */
+
+.homePage{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position:absolute;  /*Se colocar relative muda pois no absolute  consigo posicionar meu elemento em qualquer lugar da página. */
+    top:25px;
+    right:50px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.janelas{
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: #958b8b;
+    position: relative;
+    left: 450px;
+}
+.janelas:hover{
+  background-color: brown;
+}
+
+.checkbox{
+    margin: auto;
+    position: absolute;
+    left: 5px;
+    right: 2px;
+}
+ .texto1{
+    font: normal 16px Arial, Verdana, serif;
+    width: 600px;
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+    background-color: aquamarine; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    top: 50px;
+ }
+ .texto1 > #hide{
+    display: none;
+ }
+ .texto1:hover{
+    color: red;
+ }
+
+ .botaoDelicio{
+    width: 5px;
+ }
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    box-shadow:  18px -18px 16px #958b8b,-18px 18px 16px #ffffff; /* Gerei e peguei uma linha apenas https://neumorphism.io/#f8e8e8 */
+}
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+/*Aqui faz animação dos inputs */
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#dataEncontro{
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: rgb(214, 183, 183);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+#submitId{ /*Veja que quando chamei submitName não funciona.  */
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71)); /* Mesma do box*/
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+/*Links */
+a{
+    color: #958b8b;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    background-color: bisque;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu,  output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

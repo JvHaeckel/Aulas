@@ -8,8 +8,13 @@
  ];
 
  
- for(let criei of cor){
-     console.log( `Nome: ${criei.nome} com ${criei.qtd} unidades`)
+//  for(let criei of cor){
+//      console.log( `Nome: ${criei.nome} com ${criei.qtd} unidades`)
+//  }
+
+ for(let i in cor){
+cor[i].nome = cor[i].nome.toUpperCase();
  }
 
+ console.log(cor);
 

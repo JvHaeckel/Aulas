@@ -1,5 +1,5 @@
 // https://alunos.b7web.com.br/curso/javascript/js-funcoes-de-array
-                  /* Funções de Arrays */
+                  /* Funções de Arrays + Ordenação de Arrays */
 
 let fruits = ['Maçã' , 'Uva' , 'Laranja', 'Banana']
 
@@ -21,3 +21,17 @@ let cars = [
     {brand: "Ferrari" , ano: 2020 },
 
 ]
+
+     /* Vamos odernar por ano começando simples */
+// cars.sort((a , b) => {
+//     if(a.ano > b.ano){ return 1}
+//     else{ return 0};
+
+//     }
+// });
+
+// Ordenando de forma média 
+ 
+cars.sort( (a,b) => a.ano - b.ano);
+
+console.log(cars); // Em objeto não tem ordem não fez nada

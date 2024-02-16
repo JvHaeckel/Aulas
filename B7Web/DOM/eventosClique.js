@@ -1,11 +1,11 @@
-function clica(){
-    console.log("Clicou já corno")
+function clicou(){
+    console.log(" Clicou já corno")
 }
 
-// Vamos atyribuir uma variável para assim poder usar na linha 8 e dentro do 
+// Vamos atribuir uma variável para assim poder usar na linha 8 e dentro do 
 // addEventListener (escutador de evento) botamos o click e a function
 
-let botao = document.querySelector('button');
+let botao = document.querySelector('.botao');
 botao.addEventListener('click',clicou)
 
 /*  Poderia ser assim: 
@@ -36,7 +36,17 @@ function clica(){
     let botao = document.querySelector('button');
     let ul = botao.querySelector('ul');
 
-    ul.append("<li> Adicionei </li>"); /* Para adcionar um item teremos que usar o append Child*/
+    ul.append("<li> Adicionei </li>"); /* Para adicionar um item teremos que usar o append Child*/
     
+    let newLi = document.createElement('li') /* Criou o elemento na variável */
+    newLi.innerText = 'Adicionei'  /* Colocou o texto*/
+
+    ul.appendChild(newLi);  /* Colocou na lista no final como se fosse um elemento */
+
+    /* Usando o innerHTML vamos adiconar tudo de novo do começo mas são apenas poucos itens mas com 
+    apenas essa linha */
+    ul.innerHTML += "<li> Adicionei </li>";
+
+
 }
 

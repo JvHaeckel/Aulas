@@ -29,11 +29,14 @@ botao.addEventListener('click',clicou)
 /* Manipulando elementos 2 
 https://alunos.b7web.com.br/curso/javascript/js-manipulando-elementos-2*/
 
+/* APPEND -  ele adiciona TEXTO sem realocar memória, se tiver uma lista ele coloca o novo elemento no fim*/
+
 function clica(){
    
     let botao = document.querySelector('button');
+    let ul = botao.querySelector('ul');
 
-
+    ul.append("<li> Adicionei </li>"); /* Para adcionar um item teremos que usar o append Child*/
     
 }
 

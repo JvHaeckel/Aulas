@@ -20,7 +20,7 @@ function clica(){
     console.log("Clicou já corno");
 
     let botao = document.querySelector('button');
-botao.addEventListener('click',clicou)
+    botao.addEventListener('click',clicou)
 
     ul.innerHTML = '<li> Item modificado </li>';
 }

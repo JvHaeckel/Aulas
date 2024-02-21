@@ -1,4 +1,4 @@
-// Faxer uma lista onde a pessoa digita no input e ao apertar enter 
+// Fazer uma lista onde a pessoa digita no input e ao apertar enter 
 // sobe na lista o que foi digitado
 
       /*  ELEMENTOS   */

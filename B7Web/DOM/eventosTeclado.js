@@ -27,8 +27,10 @@ function digitou (e){
 }
 
 /* 
-e.key - não é tão específico
-e.shiftKey
+e.key      - não é tão específico
+e.shiftKey - boolean que vai dizer a tecla apertada junto com True or false acerca do SHIFT
+e.ctrltKey - boolean que vai dizer a tecla apertada junto com True or false acerca do SHIFT
+e.alttKey  - boolean que vai dizer a tecla apertada junto com True or false acerca do alt
 */
 
 

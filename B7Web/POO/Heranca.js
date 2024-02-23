@@ -13,7 +13,7 @@ class Person {
     }
 }
 
-class Student extends Person {  // Extends - a pessoa herda
+class Student extends Person {  // Extends - a pessoa herda, isso é uma classe filha
     constructor(name, lastName, age, id) {
         super(name);
         this.lastName = lastName;
@@ -21,7 +21,7 @@ class Student extends Person {  // Extends - a pessoa herda
         this.id = id;
     }
 sayHello(){  /* Se colocasse o mesmo nome iria sobrescrever e essa seria levado em conta*/
-    super.sayHi(); // Super - vai ser usado para executar do pai(Person)
+    super.sayHi(); // Super - vai ser usado para executar do pai/superclasse(Person)
 }
 
 }

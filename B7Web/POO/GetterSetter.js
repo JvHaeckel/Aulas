@@ -1,3 +1,7 @@
+/* https://alunos.b7web.com.br/curso/javascript/javascript-classes-getter-e-setter*/
+
+             /* Classes: Getter e Setter */
+
 
 class Person {
 
@@ -17,6 +21,11 @@ class Person {
       return this._age;
      }
     
+     set age(x){
+      if(typeof x == 'number') { // Para aceitar apenas numbers
+      this._age = x;
+     }
+   }
 }
 
 let p1 = new Person('Joao', 26);
@@ -25,6 +34,7 @@ let p3 = new Person('Gavi', 29);
 
 p1.takeSteps();
 
+p1.age = 15;
 console.log(`A pessoa: ${p1.name} tem ${p1.age} anos e deu ${p1.steps} passo(s)`)
 
 

@@ -37,4 +37,3 @@ p1.takeSteps();
 p1.age = 15;
 console.log(`A pessoa: ${p1.name} tem ${p1.age} anos e deu ${p1.steps} passo(s)`)
 
-

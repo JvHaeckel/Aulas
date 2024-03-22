@@ -46,7 +46,35 @@ class Sorcerer extends Character {
     }
 }
 
+class LittleMonster extends Character {
 
+    constructor(){
+        this.name = 'Little Monster';
+        this.life = 40;
+        this.attack = 4;
+        this.defense = 3;
+        this.maxLife = this.life;
+
+    }
+}
+
+class Bigonster extends Character {
+
+    constructor(){
+        this.name = 'Big Monster';
+        this.life = 120;
+        this.attack = 16;
+        this.defense = 6;
+        this.maxLife = this.life;
+
+    }
+}
+
+
+
+let person1 = new Knight("Joao");
+
+console.log(person1.name);
 
 
 

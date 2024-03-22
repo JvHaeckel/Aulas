@@ -1,0 +1,36 @@
+.tude {
+    background-color: rgb(238, 230, 230);
+}
+
+p{            
+    text-indent: 2em;
+           }
+   
+
+.fightarea {
+    display: flex;
+    gap: 20px;
+}
+
+#char , #monster {
+    flex: 1;
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.lifebar .bar {
+    height: inherit;
+    background-color: red;
+    width: 20%;
+}
+
+
+.log {
+    border: 1px dotted #333;
+    height: 200px;
+    overflow-y: scroll;  /* Barra de rolagem*/
+}

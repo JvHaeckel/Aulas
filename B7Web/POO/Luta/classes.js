@@ -27,8 +27,8 @@ class Knight extends Character {
 
     constructor(name) {
         super(name);  // Usa super para pegar do pai/mãe
-         // Ele vai ter as próprias carcteríticas
-        this.life = 100; 
+        // Ele vai ter as próprias carcteríticas
+        this.life = 100;
         this.attack = 10;
         this.defense = 8;
         this.maxLife = this.life;
@@ -37,7 +37,7 @@ class Knight extends Character {
 
 class Sorcerer extends Character {
 
-    constructor(name){
+    constructor(name) {
         super(name);
         this.life = 80;
         this.attack = 15;
@@ -48,7 +48,7 @@ class Sorcerer extends Character {
 
 class LittleMonster extends Character {
 
-    constructor(){
+    constructor() {
         this.name = 'Little Monster';
         this.life = 40;
         this.attack = 4;
@@ -60,7 +60,7 @@ class LittleMonster extends Character {
 
 class Bigonster extends Character {
 
-    constructor(){
+    constructor() {
         this.name = 'Big Monster';
         this.life = 120;
         this.attack = 16;
@@ -70,11 +70,23 @@ class Bigonster extends Character {
     }
 }
 
-
-
 let person1 = new Knight("Joao");
-
 console.log(person1.name);
 
+// --------- CENÁRIO ----------
+
+class Stage {
+
+    constructor(fighter1, fighter2, fighter1El, fighter2El) {
+        this.fighter1 = fighter1;
+        this.fighter2 = fighter2;
+        this.fighter1El = fighter1El;
+        this.fighter2El = fighter2El;
+    }
+
+start
+
+
+}
 
 

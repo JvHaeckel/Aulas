@@ -84,7 +84,16 @@ class Stage {
         this.fighter2El = fighter2El;
     }
 
-start
+    start() {
+        this.update();
+    }
+
+    update(){
+        this.fighter1El.querySelector(".name").innerHTML = this.fighter1El
+
+        this.fighter2El.querySelector(".name").innerHTML = this.fighter2El
+    }
+
 
 
 }

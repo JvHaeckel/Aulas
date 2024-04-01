@@ -70,8 +70,7 @@ class Bigonster extends Character {
     }
 }
 
-let person1 = new Knight("Joao");
-console.log(person1.name);
+
 
 // --------- CENÁRIO ----------
 
@@ -88,10 +87,11 @@ class Stage {
         this.update();
     }
 
-    update(){
-        this.fighter1El.querySelector(".name").innerHTML = this.fighter1El
-
-        this.fighter2El.querySelector(".name").innerHTML = this.fighter2El
+    update() {
+        // Fighter 1
+        this.fighter1El.querySelector(".name").innerHTML = this.fighter1.name;
+        // Fighter 2
+        this.fighter2El.querySelector(".name").innerHTML = this.fighter2.name;
     }
 
 

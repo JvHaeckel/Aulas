@@ -89,6 +89,10 @@ class Stage {
     update() {
         // Fighter 1
         this.fighter1El.querySelector(".name").innerHTML = this.fighter1.name;
+        // Calcular a vida e atualizar a barrinha
+        let f1Pct = (thi.fighter1.life / this.fighter1.maxLife) * 100;
+        this.fighter1El.querySelector('.bar').style.width = `${f1Pct}%` ;
+        
         // Fighter 2
         this.fighter2El.querySelector(".name").innerHTML = this.fighter2.name;
     }

@@ -73,6 +73,7 @@ class BigMonster extends Character {
 class Stage {
 
     constructor(fighter1, fighter2, fighter1El, fighter2El) {
+        /* El - elemento */
         this.fighter1 = fighter1;
         this.fighter2 = fighter2;
         this.fighter1El = fighter1El;
@@ -84,14 +85,18 @@ class Stage {
     }
 
     update() {
+
+        /* Essa função vai apenas atualizar a tela com as info dos lutadores*/
         // Fighter 1
-    this.fighter1El.querySelector(".name").innerHTML = `${this.fighter1.name} - HP: ${this.fighter1.life}`;
+        this.fighter1El.querySelector(".name").innerHTML = `${this.fighter1.name} - HP: ${this.fighter1.life}`;
+        
         // Calcular a vida e atualizar a barrinha lutador 1
         let f1Pct = (this.fighter1.life / this.fighter1.maxLife) * 100;
         this.fighter1El.querySelector('.bar').style.width = `${f1Pct}%`;
 
         // Fighter 2
         this.fighter2El.querySelector(".name").innerHTML = this.fighter2.name;
+        
         // Calcular a vida e atualizar a barrinha lutador 2
         let f2Pct = (this.fighter2.life / this.fighter2.maxLife) * 100;
         this.fighter2El.querySelector('.bar').style.width = `${f2Pct}%`;

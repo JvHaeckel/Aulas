@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luta</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body class="tude">
@@ -15,18 +16,17 @@
             <div class="lifebar">
                 <div class="bar"></div>
             </div>
-            <strong class="name"> Name</strong>
+            <strong class="name"> -- </strong>
             <div>
                 <button class="attackButton"> Atacar </button>
             </div>
         </div>
 
-
         <div id="monster">
             <div class="lifebar">
                 <div class="bar"></div>
             </div>
-            <strong class="name"> Name</strong>
+            <strong class="name"> Name </strong>
             <div>
                 <button class="attackButton"> Atacar </button>
             </div>
@@ -37,5 +37,9 @@
 
     <ul class="log"></ul>
 
+    <script src="classes.js"></script>  <!-- Carregar primeiro -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>

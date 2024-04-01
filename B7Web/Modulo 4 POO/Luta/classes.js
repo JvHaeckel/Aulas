@@ -1,3 +1,4 @@
+// Criar classes de personagens 
 
 class Character {
 
@@ -36,7 +37,6 @@ class Knight extends Character {
 }
 
 class Sorcerer extends Character {
-
     constructor(name) {
         super(name);
         this.life = 80;
@@ -47,7 +47,6 @@ class Sorcerer extends Character {
 }
 
 class LittleMonster extends Character {
-
     constructor() {
         this.name = 'Little Monster';
         this.life = 40;
@@ -58,8 +57,7 @@ class LittleMonster extends Character {
     }
 }
 
-class Bigonster extends Character {
-
+class BigMonster extends Character {
     constructor() {
         this.name = 'Big Monster';
         this.life = 120;
@@ -70,8 +68,7 @@ class Bigonster extends Character {
     }
 }
 
-
-// --------- CENÁRIO ----------
+/* --------- CENÁRIO ----------  */
 
 class Stage {
 
@@ -88,13 +85,17 @@ class Stage {
 
     update() {
         // Fighter 1
-        this.fighter1El.querySelector(".name").innerHTML = this.fighter1.name;
-        // Calcular a vida e atualizar a barrinha
-        let f1Pct = (thi.fighter1.life / this.fighter1.maxLife) * 100;
-        this.fighter1El.querySelector('.bar').style.width = `${f1Pct}%` ;
-        
+    this.fighter1El.querySelector(".name").innerHTML = `${this.fighter1.name} - HP: ${this.fighter1.life}`;
+        // Calcular a vida e atualizar a barrinha lutador 1
+        let f1Pct = (this.fighter1.life / this.fighter1.maxLife) * 100;
+        this.fighter1El.querySelector('.bar').style.width = `${f1Pct}%`;
+
         // Fighter 2
         this.fighter2El.querySelector(".name").innerHTML = this.fighter2.name;
+        // Calcular a vida e atualizar a barrinha lutador 2
+        let f2Pct = (this.fighter2.life / this.fighter2.maxLife) * 100;
+        this.fighter2El.querySelector('.bar').style.width = `${f2Pct}%`;
+
     }
 
 

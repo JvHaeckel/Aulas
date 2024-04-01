@@ -71,7 +71,6 @@ class Bigonster extends Character {
 }
 
 
-
 // --------- CENÁRIO ----------
 
 class Stage {

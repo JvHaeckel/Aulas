@@ -53,7 +53,6 @@ class LittleMonster extends Character {
         this.attack = 4;
         this.defense = 3;
         this.maxLife = this.life;
-
     }
 }
 
@@ -64,7 +63,6 @@ class BigMonster extends Character {
         this.attack = 16;
         this.defense = 6;
         this.maxLife = this.life;
-
     }
 }
 
@@ -89,14 +87,14 @@ class Stage {
         /* Essa função vai apenas atualizar a tela com as info dos lutadores*/
         // Fighter 1
         this.fighter1El.querySelector(".name").innerHTML = `${this.fighter1.name} - HP: ${this.fighter1.life}`;
-        
+
         // Calcular a vida e atualizar a barrinha lutador 1
         let f1Pct = (this.fighter1.life / this.fighter1.maxLife) * 100;
         this.fighter1El.querySelector('.bar').style.width = `${f1Pct}%`;
 
         // Fighter 2
         this.fighter2El.querySelector(".name").innerHTML = this.fighter2.name;
-        
+
         // Calcular a vida e atualizar a barrinha lutador 2
         let f2Pct = (this.fighter2.life / this.fighter2.maxLife) * 100;
         this.fighter2El.querySelector('.bar').style.width = `${f2Pct}%`;

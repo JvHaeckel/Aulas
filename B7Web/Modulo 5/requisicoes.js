@@ -28,3 +28,16 @@ console.log(`O nome dele é ${nonbre}`);
  ex: cache
  corpo/body: corpo da mensagem
  */
+
+ //#4 Como uma API funciona?
+
+ /* https://alunos.b7web.com.br/curso/javascript/javascript-como-uma-api-funciona*/
+
+
+ /* API - Application Program Interface
+
+ Comunicação entre softwares, máquina com máquina. Eles se falam através de JSON
+ Site sem aspecto visual
+
+ 
+ */

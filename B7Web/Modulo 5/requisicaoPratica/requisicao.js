@@ -1,23 +1,37 @@
-/* #5  O que é um Callback?
+/* #6  Fazendo uma requisição na prática
 
-https://alunos.b7web.com.br/curso/javascript/javascript-o-que-e-um-callback */
+https://alunos.b7web.com.br/curso/javascript/javascript-fazendo-uma-requisicao-na-pratica
 
-
-// Se aplica a eventos, botoes e requisições. 
-
-// let botao = document.getElementById("Botão");
-// botao.onclick = function (){
-//     alert("Cuidado")
+*/
+/* Aqui apenas mostrou o uso do FETCH*/
+// function clicou() {
+//     fetch('https://jsonplaceholder.typicode.com/')
+//     .then( data => {console.log(data);})
 // }
 
-document.getElementById("Botão").addEventListener('click', () => {
-    alert("Cuidado", clickCallBack);
-});
-
-let clickCallBack = ()=> alert("Cuidado");
+//     document.getElementById("Botão").addEventListener('click', clicou);
 
 
+/* */
 
+function clicou() {
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+        .catch()
+
+        
+    }
+
+
+
+
+
+    /* Resumi demais a parte do then em arrow function, mas foi o seguinte:
+    apenas usamos a o fetch para fazer uma requisição e depois tranformamos
+    em JSON para termos um objeto de fato */
+
+    document.getElementById("Botão").addEventListener('click', clicou());
 
 
 
